@@ -1,8 +1,11 @@
 package com.seele.demo.user.userService;
 
+import com.seele.demo.user.userEntity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
@@ -12,6 +15,11 @@ class userServiceImplTest {
     userServiceImpl userService;
     @Test
     void getAllInfo() {
-        userService.getAllInfo();
+        List<User> list =userService.getAllInfo();
+        for (User item:
+             list) {
+            System.out.println(item.getUsername());
+            System.out.println(item.getId());
+        }
     }
 }

@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@ServletComponentScan("com.seele.demo")
-@MapperScan("com.seele.demo")
+//@ServletComponentScan("com.seele.demo")
+//@MapperScan("com.seele.demo")
 public class VuetestApplication {
 
     public static void main(String[] args) {
