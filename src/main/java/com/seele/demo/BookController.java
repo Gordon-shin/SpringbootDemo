@@ -19,6 +19,7 @@ public class BookController {
     @RequestMapping(value = "/books",method = RequestMethod.GET )
     @ResponseBody
     public List<books> getBooksJson(){
+
         return bookService.getAllBooks();
     }
     @RequestMapping(value = "/books/names",method = RequestMethod.GET )

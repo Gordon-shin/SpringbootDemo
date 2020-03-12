@@ -5,9 +5,12 @@ spring:
     username: root
     password: root
 server:
-  port: 8081
+  port: 9999
 
 com:
   seele:
     name: 123
     age: 66
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
