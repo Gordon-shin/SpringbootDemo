@@ -18,7 +18,7 @@ public class userServiceImpl implements IuserService {
     }
 
     @Override
-    public List<User> getAllInfo() {
+    public List<Map<String,Object>> getAllInfo() {
         return userMapper.getUsers();
     }
 }

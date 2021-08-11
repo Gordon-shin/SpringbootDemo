@@ -3,7 +3,14 @@
 <!--namespace =绑定一个对应的Dao/Mapper 接口 相当于接口的实现类-->
 <mapper namespace="com.seele.demo.user.userDao.userMapper">
     <!-- 对应的方法名-->
-    <select id="getUsers" resultType="com.seele.demo.user.userEntity.User">
+    <select id="getUsers" resultType="map">
         select * from users
     </select>
+    <select id="getUserById" parameterType="int" resultType="com.seele.demo.user.userEntity.User">
+        select * from users where id = #{id}
+    </select>
+    <insert id="insertUser" parameterType="com.seele.demo.user.userEntity.User" >
+        insert  into users (id,username,pwd)  values(#{id},#{username},#{pwd})
+    </insert>
+
 </mapper>

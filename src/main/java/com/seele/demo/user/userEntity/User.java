@@ -22,6 +22,11 @@ public class User {
         this.pwd = pwd;
     }
 
+    public User(String username, String pwd) {
+        this.username = username;
+        this.pwd = pwd;
+    }
+
     @Override
     public String toString() {
         return "com.seele.demo.user{" +

@@ -7,5 +7,5 @@ import java.util.Map;
 
 public interface IuserService {
     Map<String,String>login(String username,String password);
-    List<User> getAllInfo();
+   List<Map<String,Object>> getAllInfo();
 }
