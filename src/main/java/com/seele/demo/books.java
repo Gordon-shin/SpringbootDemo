@@ -37,4 +37,10 @@ public class books {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    public books(int id, String name, String author) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+    }
 }
